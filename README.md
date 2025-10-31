@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+## Useage
+
+This is used in Flutter hackathon in 42 Tokyo conducted by HANAUTA INC.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
