@@ -28,7 +28,7 @@ class _QuizPageState extends State<QuizPage> {
     // 現在の問題データを取得
     final currentQuiz = quizData[_currentQuestionIndex];
     // 正誤判定
-    final isCorrect = selectedAnswer != currentQuiz.correctAnswer;
+    final isCorrect = selectedAnswer == currentQuiz.correctAnswer;
 
     // スコアの更新
     if (isCorrect) {
