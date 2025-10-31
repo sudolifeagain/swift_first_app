@@ -13,7 +13,7 @@ class ResultPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // 問題の総数
-    final int totalQuestions = 4;
+    final int totalQuestions = 3;
 
     // スコアに応じて表示するコメントを決定する
     String comment;
