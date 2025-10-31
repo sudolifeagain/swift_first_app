@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/home_page.dart';
 import 'quiz_page.dart';
+import 'package:myapp/quiz_data.dart';
 
 class ResultPage extends StatelessWidget {
   // QuizPage から受け取る正解数
@@ -14,7 +15,7 @@ class ResultPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // 問題の総数
-    final int totalQuestions = 3;
+    final int totalQuestions = quizData.length;
 
     // スコアに応じて表示するコメントを決定する
     String comment;
