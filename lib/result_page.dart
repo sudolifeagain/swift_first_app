@@ -1,6 +1,7 @@
 // result_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:myapp/home_page.dart';
 import 'quiz_page.dart';
 
 class ResultPage extends StatelessWidget {
@@ -73,7 +74,7 @@ class ResultPage extends StatelessWidget {
                 Navigator.pushAndRemoveUntil(
                   context,
                   // 遷移先の画面 (新しい HomePage)
-                  MaterialPageRoute(builder: (context) => const QuizPage()),
+                  MaterialPageRoute(builder: (context) => const HomePage()),
                   // ルートを削除する条件: (route) => false
                   // この条件は常に偽を返すため、すべての過去のルート（HomePage, QuizPage, ResultPage）が削除されます。
                   (Route<dynamic> route) => false,
